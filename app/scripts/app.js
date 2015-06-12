@@ -2,26 +2,54 @@
 
 /**
  * @ngdoc overview
- * @name mytodoApp
+ * @name itemMirrorAngularDemoApp
  * @description
- * # mytodoApp
+ * # itemMirrorAngularDemoApp
  *
  * Main module of the application.
  */
 angular
-  .module('mytodoApp', [
+  .module('itemMirrorAngularDemoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'mgcrea.ngStrap',
+    'ui.sortable'
   ])
+
+  /*idhar jadbad hai -->
+  --> apna wala code: Mytodo>scripts>app.js
+
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: 'views/main.html',
+        controller: 'MainCtrl',
+        controllerAs:'mc'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  });
+
+*/
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/explorer', {
+        templateUrl: 'views/explorer.html',
+        controller: 'ExplorerCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',

@@ -8,12 +8,11 @@
  * # MainCtrl
  * Controller of the itemMirrorAngularDemoApp
  */
-angular.module('itemMirrorAngularDemoApp')
-  .controller('MainCtrl', function ($scope) {
+angular.module('mytodoApp')
+  .controller('ContactCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
   });
-

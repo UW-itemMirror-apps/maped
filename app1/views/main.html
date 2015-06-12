@@ -1,0 +1,264 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>I'm Map'Ed</title>
+
+      <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+      <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="styles/css/freelancer.css" rel="stylesheet">
+          
+      
+      <!-- Favicon  -->
+      <!--<link rel="shortcut icon" href="img/super_final.ico" type="image/x-icon">-->
+      <!--<link rel="icon" href="img/super_final.ico" type="image/x-icon">-->
+
+      <!-- Custom Fonts -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61724726-1', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+  </head>
+
+  <body style="text-align: center">
+  <!-- Header -->
+    <section id="header">
+      <header>
+        <!--<div class="container">-->
+          <!--<h1 style="text-align:center">Jane Doe</h1>-->
+          <!--<img src="images/profile.png" class='img-circle' width='260' height='260' align="middle" alt='profile-item'>-->
+        <!--</div>-->
+        <div class="row" style="text-align: center; color: #2c3e50">
+          <h1>John Doe</h1>
+          <hr class="star-primary">
+        </br>
+        </div>
+        <div class="row" style="text-align: center">
+          <img src="images/profile.png" width='260' height='260' align="middle" alt='portfolio-item' class='img-circle img-responsive img-centered'>
+        </br>
+        </div>
+          </br>
+          <div class="row" style="text-align: center">
+          <!--<div class="col-lg-12 col-lg-offset-2">-->
+          <p style="text-align: center">Hello there! I&apos;m John Doe, a Software Developer from Seattle.</p></br>
+          <p style="text-align: center">I'm a graduate student at the University of Washington pursuing Masters of Science in Information Management degree.
+          I'm focusing my studies in the field of Data Science and Analytics. I develop interactive data visualizations using analytic tools
+          I'm passionate about making things that have a positive impact on people's lives.</b></p>
+          <!--</div>-->
+          <!--<div class="col-lg-8 col-lg-offset-2 text-center">-->
+          <div class="row" style="text-align: center">
+            <span class="icon">
+              <span class="page-scroll"><a href="#resume"><i class="fa fa-arrow-circle-down fa-3x"></i></a></span>
+            </span>
+          </div>
+          <!--</div>-->
+          </div>
+        
+      </header>
+    </section>
+
+      <!--=============== section resume ===============-->
+      
+      <div id="resume"  class="sections"> 
+        <div class="background-color">  
+          <div class="content">
+            <div class="container1 animaper anim">
+            
+              <h1 style="text-align:center">WORK EXPERIENCE</h1>
+              <hr class="star-primary">
+              <h2 class="color-white">resume</h2>
+              <div class="content-separator"><i class="fa fa-briefcase"></i><span></span></div>
+      
+              <div class="grid-full">
+                <div class="resume-line"></div>
+
+                <!--repeat item -->
+
+            <div class="grid-full place-holder" ng-repeat="workExperience in workExperiences| yearfilter">
+              <div class="grid-1">
+                               
+                <div class="resume-date">
+                                   
+                </div> 
+                               
+              </div> 
+                               
+              <div class="grid-5 right">
+                               
+                <div class="resume-info">
+                  <h2>{{workExperience.year}}</h2>
+                  <span>{{workExperience.type}}</span>
+                  <h3>{{workExperience.title}}</h3>
+                  <h4>{{workExperience.position}}</h4>
+                  <p>{{workExperience.desc}}</p>
+                  </br>
+                </div>
+              </div>
+            </div>
+              
+                
+                <!-- 1 item-->
+                 
+                <!-- <div class="grid-full place-holder">
+                  <div class="grid-1">
+                  
+                    <div class="resume-date">
+                      <h4>2013-2014</h4>
+                      <span>work</span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="grid-5 right">
+                  
+                    <div class="resume-info">
+                    
+                      <h3>Quasi architecto</h3>
+                      <h4>DESIGNER</h4>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      
+                    </div>
+                  
+                  </div>
+                  
+                </div>
+                  --> 
+                 <!-- 2 item-->
+                 
+                <!-- <div class="grid-full place-holder">
+                
+                  <div class="grid-1">
+                  
+                    <div class="resume-date">
+                      <h4>2012-2013</h4>
+                      <span>work</span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="grid-5 right">
+                    <div class="resume-info">
+                      <h3>Consectetur</h3>
+                      <h4>Web Developer </h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      
+                    </div>
+                  
+                  </div>
+                  
+                </div>
+                  -->            
+                <!-- 3 item-->
+                 
+                <!-- <div class="grid-full place-holder">
+                
+                  <div class="grid-1">
+                  
+                    <div class="resume-date">
+                      <h4>2008-2013</h4>
+                      <span>Education</span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="grid-5 right">
+                  
+                    <div class="resume-info">
+                    
+                      <h3>Commodo consequat</h3>
+                      <h4>Student</h4>
+                      <p>Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
+                    </div>
+                  
+                  </div>
+                  
+                </div>    
+                  -->     
+                 <!-- 4 item-->
+                 
+                <!-- <div class="grid-full place-holder">
+                
+                  <div class="grid-1">
+                  
+                    <div class="resume-date">
+                      <h4>2011-2012</h4>
+                      <span>work</span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="grid-5 right">
+                  
+                    <div class="resume-info">
+                    
+                      <h3>Exercitation</h3>
+                      <h4>Web Developer </h4>
+                      <p>Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. Xillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      
+                    </div>
+                  
+                  </div>
+                  
+                </div>          --> 
+                
+                <!--<a href="/docs/resume1.pdf" target="_blank" class="btn-lg btn-success">Download resume</a>-->
+                <button class="btn-lg btn-success" ng-click="html2canvas(element, options)">Download resume</a>
+              
+              </div>
+          
+            </div>  
+            
+          </div>
+      
+        </div>
+      
+        <div class="resumeshadow"></div>
+        
+      </div><!--=============== section resume end===============-->
+      <!-- jQuery -->
+          <script src="scripts/js/jquery.js"></script>
+
+          <!-- Bootstrap Core JavaScript -->
+          <script src="scripts/js/bootstrap.min.js"></script>
+
+          <!-- Plugin JavaScript -->
+          <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+          <script src="scripts/js/classie.js"></script>
+          <script src="scripts/js/cbpAnimatedHeader.js"></script>
+
+          <!-- Contact Form JavaScript -->
+          <script src="scripts/js/jqBootstrapValidation.js"></script>
+          <script src="scripts/js/contact_me.js"></script>
+
+          <!-- Custom Theme JavaScript -->
+          <script src="scripts/js/freelancer.js"></script>
+
+  </body>
+  </html>

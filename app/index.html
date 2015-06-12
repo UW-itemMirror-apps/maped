@@ -2,85 +2,124 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Map'Ed</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
+    <!--These are my css stylesheets -->
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+      <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="styles/css/freelancer.css" rel="stylesheet">
+      <!--Mytodo>styles>5files copied into ItemMirror>styles>css -->
+
+      <!-- Custom Fonts -->
+      <link href="#/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   </head>
-  <body ng-app="mytodoApp">
+  <body ng-app="itemMirrorAngularDemoApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="container">
+      <div class="header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+        <h3 class="text-muted">Map'Ed</h3>
 
-            <a class="navbar-brand" href="#/">mytodo</a>
-          </div>
+        <!-- This is my new code -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
+              <!--<a class="navbar-brand" href="#/">mytodo</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#/main">Home</a></li>
+                <li class="active"><a ng-href="#/about">About</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <!-- My new code ends here -->
+      <!--This is causing the page content to be seen twice
+      <div ng-view=""></div>-->
     </div>
+
+    <!--My new container and footer code starts here -->
 
     <div class="container">
     <div ng-view=""></div>
-    </div>
 
-    <div class="footer">
+    <div class="footer" style="background-color: #f39c12; color: #FFFFFF; text-align: center;">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Maped team</p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span>&nbsp;&nbsp;Copyright of the Maped team</p>
       </div>
     </div>
+
+
+    </div>
+
+    
+
+    <!--My new container and footer code ends here -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
 
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <script src="bower_components/item-mirror/item-mirror.js"></script>
+    <script src="bower_components/dropbox-build/dropbox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -88,6 +127,13 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--These scripts were not included in mytodo -->
+        <script src="scripts/services/item-mirror.js"></script>
+        <script src="scripts/services/dropbox-auth.js"></script>
+        <script src="scripts/controllers/explorer.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-sortable/0.13.3/sortable.js"></script>
+        
         <!-- endbuild -->
 </body>
 </html>
