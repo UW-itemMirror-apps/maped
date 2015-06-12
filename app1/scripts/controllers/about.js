@@ -1,13 +1,14 @@
+/* ItemMirror's main.js is actually our Mytodo's>about.js */
 'use strict';
 
 /**
  * @ngdoc function
- * @name mytodoApp.controller:AboutCtrl
+ * @name itemMirrorAngularDemoApp.controller:MainCtrl
  * @description
- * # AboutCtrl
- * Controller of the mytodoApp
+ * # MainCtrl
+ * Controller of the itemMirrorAngularDemoApp
  */
-angular.module('mytodoApp')
+angular.module('itemMirrorAngularDemoApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

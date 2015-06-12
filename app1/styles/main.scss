@@ -1,0 +1,199 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "//fonts.googleapis.com/css?family=Open+Sans:300,400,700)";
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+
+.association {
+  padding: 5px 5px;
+  border: 2px solid;
+  margin: 0px 10px 10px 0px;
+  box-shadow: 0px 5px 3px #AAA;
+  transition: background-color 0.25s ease;
+
+  .glyphicon {
+    font-size: 175%;
+
+    &.glyphicon-folder-close {
+    }
+
+    &.glyphicon-file {
+    }
+  }
+
+  // The '&' symbol is because we want to OVERWRITE the same values as the
+  // parent. Otherwise we won't get a change.
+  &.selected {
+
+    &:hover, &:active {
+    }
+  }
+
+  h3 {
+    overflow: hidden;
+    font-size: 150%;
+    padding: 0;
+    margin: 5px;
+  }
+
+  &:hover, &:active {
+  }
+}
+
+.scroll {
+  overflow: auto;
+  height: 80vh;
+}
+
+.editor {
+
+}
+
+textarea {
+  height: 250px;
+  width: 400px;
+}
+
+.resume-info {
+  text-align: left;
+  padding:18px;
+  background:#f8f8f8;
+  border-radius:8px;
+  border-bottom:6px solid #ccc;
+  border-left:1px solid #ccc;
+  position:relative;
+}
+.resume-info h3{
+  font-weight:800;
+  text-transform:none;
+  color:#666;
+  margin-bottom:6px;
+}
+.resume-info h4{
+  font-weight:600;
+}
+.resume-info p {
+  font-size:0.8em;
+  margin-top:10px;
+}
+.resume-info:after{
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  padding: 0px 150px;
+}
+.resume-info:after {
+  border-right-color: #ccc;
+  border-width: 15px;
+  margin-top: -15px;
+}
+.resume-info:before{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 70%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  padding: 0px 150px;
+}
+
+a{
+  color: #337ab7;
+  font-size: 22px;
+}
+
+/* Bubble Float Left */
+.hvr-bubble-float-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-left:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: calc(50% - 10px);
+  left: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #e1e1e1 transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-left:hover, .hvr-bubble-float-left:focus, .hvr-bubble-float-left:active {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
+.hvr-bubble-float-left:hover:before, .hvr-bubble-float-left:focus:before, .hvr-bubble-float-left:active:before {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateX(-18px);
+  transform: translateX(-18px);
+}
+
+section{
+  width: "1170px";
+}
+
+header{
+  width: "1170px";
+}
